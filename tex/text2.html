@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple Two dimensional(2D) Array Example</title>
+   
+   <style>
+      *{
+         margin: 0px;
+         padding: 0px;
+      }
+      .code {
+         border: 3px solid black;
+    background: linear-gradient(#e0bca6, #6bae6d);
+    color: black;
+    
+      }
+      #txt{margin: 40px;
+         font-weight: bold;
+    font-size:23px;
+      }
+      
+   
+   </style>
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="/css/tx.css">
+
+</head>
+
+<body>
+   <div class="code">
+      <pre id="txt">
+        #include&lt;stdio.h&gt;
+        
+          int main() {
+          
+            int marks[10], i, n;
+            float sum = 0, average;
+          
+            printf("Enter number of elements: ");
+            scanf("%d", &n);
+          
+            for(i=0; i&lt;n; ++i) {
+              printf("Enter number%d: ",i+1);
+              scanf("%d", &amp;marks[i]);
+                    
+              // adding integers entered by the user to the sum variable
+              sum += marks[i];
+            }
+          
+            average = sum / n;
+            printf("Average = %f", average);
+          
+            return 0;
+          }
+      </pre>
+   </div>
+
+</body>
+
+</html>
