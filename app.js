@@ -13,16 +13,16 @@ app.get('/', (req, res)=>{
    res.status(200).sendFile(path.join(__dirname,"index.html"));
  })
 app.get('/bas', (req, res)=>{
-   res.status(200).sendFile(path.join(__dirname,"views","basic.html"));
+   res.status(200).sendFile(path.join(__dirname,"basic.html"));
  })
 app.get('/arr', (req, res)=>{
-   res.status(200).sendFile(path.join(__dirname,"views","aray.html"));
+   res.status(200).sendFile(path.join(__dirname,"aray.html"));
  })
 app.get('/fun', (req, res)=>{
-   res.status(200).sendFile(path.join(__dirname,"views","func.html"));
+   res.status(200).sendFile(path.join(__dirname,"func.html"));
  })
 app.get('/lop', (req, res)=>{
-   res.status(200).sendFile(path.join(__dirname,"views","loops.html"));
+   res.status(200).sendFile(path.join(__dirname,"loops.html"));
  })
  app.listen(port,()=>{
      console.log(`YOUR WEBSITE IS READY TO HOST ${port}`);
