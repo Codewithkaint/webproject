@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'views')));
 
 
 app.get('/', (req, res)=>{
-   res.status(200).sendFile(path.join(__dirname,"views","index.html"));
+   res.status(200).sendFile(path.join(__dirname,"index.html"));
  })
 app.get('/bas', (req, res)=>{
    res.status(200).sendFile(path.join(__dirname,"views","basic.html"));
